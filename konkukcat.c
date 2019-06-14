@@ -362,12 +362,13 @@ void play_minigame1(void) //랜덤 숫자 맞추기 게임
 
 	rand_num = rand() % 100;
 	showcat_minigame(10);
+	sleep(1);
 
 	while (1) {
 		printf("숫자를 입력하세요");
 		scanf("%d", &guess);
 
-		if (0 <= guess <= 100)
+		if (0 <= guess && guess <= 100)
 		{
 			if (guess == rand_num)
 			{
@@ -396,7 +397,7 @@ void play_minigame1(void) //랜덤 숫자 맞추기 게임
 		showcat_minigame(50);
 		joygage += 10;
 	}
-	else if (5 < count <= 15)
+	else if (5 < count && count <= 15)
 	{
 		showcat_minigame(60);
 		joygage += 7;
@@ -418,7 +419,7 @@ void play_minigame2(void) //가위바위보 게임
 	char buf[200];
 
 	srand(time(NULL)); //time(NULL):1초 단위로 시간 변경
-	a = rand() % 3 + 1; //1~3까지 렌덤하게 숫자 발생
+	a = rand() % 3 + 1; //1~3까지 랜덤하게 숫자 발생
 
 	do
 	{
