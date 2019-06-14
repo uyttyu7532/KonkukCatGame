@@ -83,7 +83,7 @@ void* rand_minus(void* data)
 }
 
 void menu(void) {
-	while (1) { // level이 10이 되거나 게이지가 0이되면 종료해야함
+	while (1) { // level이 10이 되면 종료
 		menunum = 6;
 		if (level >= 10) exit(0);
 		if (menunum != 5) {
