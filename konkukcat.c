@@ -167,7 +167,7 @@ void showcat_food(int n)
 	    if (n == 50)
             fp = fopen("food50.txt", "r");
 
-        else
+            else
             fp = fopen("food70.txt", "r");
 
 	    while((c = fgetc(fp)) != EOF)
