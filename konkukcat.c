@@ -410,7 +410,7 @@ void play_minigame1(void) //랜덤 숫자 맞추기 게임
 }
 
 
-void play_minigame2(void)
+void play_minigame2(void) //가위바위보 게임
 {
 	int a;
 	int t;
