@@ -368,7 +368,7 @@ void play_minigame1(void) //랜덤 숫자 맞추기 게임
 		printf("숫자를 입력하세요");
 		scanf("%d", &guess);
 
-		if (0 <= guess && guess <= 100)
+		if (1 <= guess && guess <= 100)
 		{
 			if (guess == rand_num)
 			{
