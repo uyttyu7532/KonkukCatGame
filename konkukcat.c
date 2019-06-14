@@ -45,7 +45,7 @@ void* t_function(void* data)
 
 
 
-
+// 게이지 랜덤 감소
 void* rand_minus(void* data)
 {
 	int rand_num;
