@@ -470,24 +470,28 @@ void play_minigame2(void) //가위바위보 게임
 void select_minigame()
 {
 	int mg;
+	
+	if (joygage > 90) printf("건냥 is already fun\n\n"); //최대 게이지 100넘는 것 방지
 
-	while (1) {
-		printf("\n게임을 선택해 주세요!\n1. 랜덤 숫자 맞추기   2. 가위바위보   0. 메인 화면으로 돌아가기\n");
-		scanf("%d", &mg);
+	else {
+		while (1) {
+			printf("\n게임을 선택해 주세요!\n1. 랜덤 숫자 맞추기   2. 가위바위보   0. 메인 화면으로 돌아가기\n");
+			scanf("%d", &mg);
 
-		if (mg == 1) {
-			play_minigame1();
-			break;
-		}
+			if (mg == 1) {
+				play_minigame1();
+				break;
+			}
 
-		else if (mg == 2) {
-			play_minigame2();
-			break;
-		}
+			else if (mg == 2) {
+				play_minigame2();
+				break;
+			}
 
-		else if (mg == 0) {
-			return;
-			break;
+			else if (mg == 0) {
+				return;
+				break;
+			}
 		}
 	}
 }
