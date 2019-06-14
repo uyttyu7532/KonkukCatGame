@@ -165,12 +165,12 @@ void showcat_food(int n)
 	    int c;
 
 	    if (n == 50)
-            fp = fopen("food50.text", "r");
+            fp = fopen("food50.txt", "r");
 
         else
-            fp = fopen("food70.text", "r");
+            fp = fopen("food70.txt", "r");
 
-	    while((c = fgetc(fp)) != -1)
+	    while((c = fgetc(fp)) != EOF)
         {
             putchar(c);
         }
