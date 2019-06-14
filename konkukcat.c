@@ -442,6 +442,7 @@ void play_minigame2(void) //가위바위보 게임
 			printf("\n비겼습니다\n");
 			showcat_minigame(80);
 			joygage += 3;
+			sleep(1);
 		}
 
 		else if ((t == 1 && a == 3) || (t == 2 && a == 1) || (t == 3 && a == 2))
@@ -449,6 +450,7 @@ void play_minigame2(void) //가위바위보 게임
 			printf("\n이겼습니다\n");
 			showcat_minigame(90);
 			joygage += 7;
+			sleep(1);
 		}
 
 		else if ((t == 1 && a == 2) || (t == 2 && a == 3) || (t == 3 && a == 1))
@@ -456,6 +458,7 @@ void play_minigame2(void) //가위바위보 게임
 			printf("\n졌습니다\n");
 			showcat_minigame(100);
 			joygage += 1;
+			sleep(1);
 		}
 
 		buf[0] = '\0';
